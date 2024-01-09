@@ -18,13 +18,7 @@ def index(request):
 
     return render(request, 'index.html', {'posts': posts})
 
-def about(request):
-    posts = Post.objects.all()
-    return render(request, 'about.html', {'posts':posts})
 
-def contact(request):
-    posts = Post.objects.all()
-    return render(request, 'contact.html', {'posts':posts})
 
 def post(request):
     posts = Post.objects.all()
